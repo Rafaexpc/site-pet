@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachorro Educado em 7 Dias</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Contador simples
+    let time = 600; // 10 minutos
+    function startTimer(){
+      const el = document.getElementById('timer');
+      setInterval(()=>{
+        let min = Math.floor(time/60);
+        let sec = time % 60;
+        el.innerText = `${min}:${sec < 10 ? '0'+sec : sec}`;
+        if(time > 0) time--;
+      },1000);
+    }
+    window.onload = startTimer;
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HERO -->
+  <section class="bg-green-500 text-white text-center p-10">
+    <h1 class="text-4xl font-bold mb-4">Cachorro Educado em 7 Dias</h1>
+    <p class="text-lg mb-4">Transforme o comportamento do seu cachorro rapidamente</p>
+    <p class="mb-4">⏳ Oferta expira em: <span id="timer" class="font-bold"></span></p>
+    <a href="#" class="bg-white text-green-600 px-6 py-3 rounded-2xl font-bold shadow-lg hover:scale-105 transition">QUERO MEU CACHORRO EDUCADO</a>
+  </section>
+
+  <!-- PROBLEMAS -->
+  <section class="p-10 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4 text-center">Você passa por isso?</h2>
+    <ul class="space-y-3 text-lg">
+      <li>❌ Xixi no lugar errado</li>
+      <li>❌ Latidos excessivos</li>
+      <li>❌ Destruição de móveis</li>
+      <li>❌ Falta de obediência</li>
+    </ul>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="bg-white p-10">
+    <h2 class="text-2xl font-bold text-center mb-6">Resultados de alunos</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-4 rounded-xl shadow">“Meu cachorro parou de destruir tudo em poucos dias!” ⭐⭐⭐⭐⭐</div>
+      <div class="bg-gray-100 p-4 rounded-xl shadow">“Nunca pensei que seria tão fácil ensinar comandos.” ⭐⭐⭐⭐⭐</div>
+      <div class="bg-gray-100 p-4 rounded-xl shadow">“Valeu cada centavo, mudou minha rotina!” ⭐⭐⭐⭐⭐</div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="p-10 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">O que você vai aprender</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
+      <li>✔ Comandos básicos</li>
+      <li>✔ Correção de comportamento</li>
+      <li>✔ Rotina ideal</li>
+      <li>✔ Como deixar seu cachorro calmo</li>
+    </ul>
+  </section>
+
+  <!-- OFERTA -->
+  <section class="bg-green-500 text-white text-center p-10">
+    <h2 class="text-3xl font-bold mb-4">Oferta Especial</h2>
+    <p class="text-xl line-through">De R$97</p>
+    <p class="text-4xl font-bold mb-6">Por apenas R$37</p>
+    <a href="#" class="bg-white text-green-600 px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">COMPRAR AGORA</a>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="p-10 text-center">
+    <h2 class="text-2xl font-bold mb-4">Garantia de 7 dias</h2>
+    <p>Ou seu dinheiro de volta sem perguntas.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white p-10 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">Perguntas Frequentes</h2>
+    <p><strong>Funciona para qualquer cachorro?</strong><br>Sim, qualquer raça e idade.</p>
+    <p class="mt-4"><strong>Preciso ter experiência?</strong><br>Não, é para iniciantes.</p>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-800 text-white text-center p-5">
+    <p>© 2026 Cachorro Educado - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
